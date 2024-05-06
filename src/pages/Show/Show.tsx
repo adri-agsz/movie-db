@@ -97,8 +97,8 @@ const Show: React.FC = () => {
     return (
       <div className='p-4'>
         <div className= "flex flex-row space-x-4 mb-4">
-            <div className="">
-                <img className="rounded-lg " src={IMAGE_SOURCE + detail?.poster_path}></img>
+            <div className="min-w-[350px] max-w-[350px]">
+                <img className="rounded-lg" src={IMAGE_SOURCE + detail?.poster_path}></img>
             </div>
 
             <div className='space-y-5'>

@@ -64,18 +64,18 @@ const Home = () => {
       
       <section className="section">
         <h2 className="text-3xl font-semibold mb-6 text-stone-600">POPULAR</h2>
-        <Carrousel movies={popularMovies} />
+        <Carrousel movies={popularMovies.filter(movie => movie.vote_average >= 7)} />
       </section>
 
       <section className="section">
         <h2 className="text-3xl font-semibold mb-6 text-stone-600">TOP RATED</h2>
-        <Carrousel movies={topRatedMovies} />
+        <Carrousel movies={topRatedMovies.filter(movie => movie.vote_average >= 7)} />
       </section>
 
 
       <section className="section">
         <h2 className="text-3xl font-semibold mb-6 text-stone-600">NOW PLAYING</h2>
-        <Carrousel movies={(nowPlayingMovies)} />
+        <Carrousel movies={(nowPlayingMovies.filter(movie => movie.vote_average >= 7))} />
       </section>
          
 
